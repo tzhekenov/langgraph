@@ -88,6 +88,18 @@ The system consists of two main components:
 
 ## Usage
 
+### Test individual chains:
+
+You can test each chain in isolation to ensure they work correctly before testing the full graphs. Each chain file (chains/notice_extraction.py, chains/escalation_check.py, chains/binary_questions.py) includes an if __name__ == "__main__": block.
+
+What to check: Observe the print output. Ensure the chains correctly parse information, check escalation, or answer binary questions based on the test inputs defined within those files. Check for any errors.
+
+```python   
+    python chains/notice_extraction.py
+    python chains/escalation_check.py
+    python chains/binary_questions.py
+```
+
 ### Processing a Single Email
 
 You can process an email by running a script that invokes the agent graph. (Example script needed here)
