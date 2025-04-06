@@ -78,7 +78,7 @@ def check_escalation_status_node(state: GraphState) -> Dict[str, bool]:
         fine_check = False
         if notice_extract.max_potential_fine is not None:
             fine_check = notice_extract.max_potential_fine >= state["escalation_dollar_criteria"]
-            LOGGER.info(f"Fine escalation check result (">{state['escalation_dollar_criteria']}"): {fine_check}")
+            LOGGER.info(f"Fine escalation check result (> {state['escalation_dollar_criteria']}): {fine_check}")
         else:
             LOGGER.info("No maximum potential fine found in notice for escalation check.")
 

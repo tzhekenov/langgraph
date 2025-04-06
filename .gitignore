@@ -1,2 +1,5 @@
 ".env" 
 .env
+*.pyc
+pycache/
+__pycache__/
