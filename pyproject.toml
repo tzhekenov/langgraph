@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "langgraph-project"
+version = "0.1.0"
+description = "LangGraph project demonstrating stateful AI agents"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9" # Or your desired Python version
+langgraph = ">=0.0.57" # Use a recent version, check latest if needed
+langchain-openai = "^0.1.0"
+pydantic = {extras = ["email"], version = "^2.7.0"}
+python-dotenv = "^1.0.0"
+# Add langchain if needed for other components, though tutorial seems focused on core/openai
+# langchain = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 
